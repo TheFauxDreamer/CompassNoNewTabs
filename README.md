@@ -21,6 +21,6 @@ Safari is a WIP.
 
 ## How to install or test
 
-1. Ummm. I don't know actually
-2. Download the safari version, create an Xcode project for safari extension.
+1. Ummm. I don't know actually...
+2. Download the safari version, create an Xcode project for a safari extension.
 3. Paste this over the top?
