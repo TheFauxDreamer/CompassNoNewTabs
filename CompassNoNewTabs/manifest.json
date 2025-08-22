@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Compass No New Tabs",
+  "version": "1.0",
+  "description": "Sick of Compass openning a new tab everytime you click on something? That's a thing of the past now",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Toggle Target Blank Remover"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.compass.education/*"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
