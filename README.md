@@ -17,7 +17,7 @@ You can enable/disable the extension in a flash, clicking on the extension icon 
 ## Support:
 This version of the extenion supports Chrome & Edge!
 
-Safari is a WIP.
+Safari is a WIP. (check the Safari branch)
 
 ## How to install or test the unloaded version.
 
