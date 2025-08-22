@@ -19,7 +19,7 @@ There is another version that supports Chrome & Edge! (Change branches)
 
 Safari is a WIP.
 
-## How to install or test the unloaded version.
+## How to install or test
 
 1. Ummm. I don't know actually
 2. Download the safari version, create an Xcode project for safari extension.
