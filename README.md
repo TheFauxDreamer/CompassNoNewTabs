@@ -1,4 +1,4 @@
-# CompassNoNewTabs Extension
+# CompassNoNewTabs Safari Extension
 Do you get fed up using Compass for more than 5 minutes and ending up with a million tabs open?</br></br>
 So do I!</br></br>
 But that no longer has to be the case. 😊</br>
@@ -15,16 +15,12 @@ c. Quick Actions</br>
 You can enable/disable the extension in a flash, clicking on the extension icon in the menubar gives you the option to enable or disable on the fly.
 
 ## Support:
-This version of the extenion supports Chrome & Edge!
+There is another version that supports Chrome & Edge! (Change branches)
 
 Safari is a WIP.
 
 ## How to install or test the unloaded version.
 
-1. Download it from this Github, and save it somewhere useful.
-2. Go to Chrome Settings using three dots on the top right corner.
-3. Then Select Extensions.
-4. Now, Enable developer mode
-5. Click on Load Unpacked and select your Unzip folder.
-
-That's it!
+1. Ummm. I don't know actually
+2. Download the safari version, create an Xcode project for safari extension.
+3. Paste this over the top?
