@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (enabled) {
             statusDiv.textContent = 'Extension is ENABLED';
             statusDiv.className = 'status enabled';
-            toggleBtn.textContent = 'Disable';
+            toggleBtn.textContent = 'Disable Me';
             toggleBtn.className = 'toggle-btn disable';
         } else {
             statusDiv.textContent = 'Extension is DISABLED';
             statusDiv.className = 'status disabled';
-            toggleBtn.textContent = 'Enable';
+            toggleBtn.textContent = 'Enable Me';
             toggleBtn.className = 'toggle-btn enable';
         }
     }
