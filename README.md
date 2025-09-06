@@ -4,7 +4,7 @@ So do I!</br></br>
 But that no longer has to be the case. 😊</br>
 
 ## Functionality:
-The extension is set to only remove the 'open in new tab' functionality from Compass portals.<br>It will only apply to website with the address "https://myschoolhere.compass.education".
+The extension is set to only remove the 'open in new tab' functionality from Compass portals.<br>It will only apply to websites with the address "https://myschoolhere.compass.education".
 
 Removes all "_blank" from links except for the following:
 
