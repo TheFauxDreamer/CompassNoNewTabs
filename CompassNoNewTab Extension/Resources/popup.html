@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    
+    .toggle-btn {
+      background: #007AFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    .toggle-btn.disabled {
+      background: #8E8E93;
+    }
+    
+    .status {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="status" id="status">Extension is enabled</div>
+  <button class="toggle-btn" id="toggleBtn">Disable</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
