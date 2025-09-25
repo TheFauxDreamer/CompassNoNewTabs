@@ -31,7 +31,42 @@
             }
         }
         
+        // Check if this link is in a quill-viewer element
+        if (isInQuillViewer(link)) {
+            return true;
+        }
+        
         return false;
+    }
+    
+    function isInQuillViewer(link) {
+        // Check if the link is inside an element with the quill-viewer classes
+        const quillViewer = link.closest('.quill-viewer.MuiBox-root.css-0');
+        return quillViewer !== null;
+    }
+    
+    function addTargetBlankToQuillViewer() {
+        if (!isEnabled) return;
+        
+        // Find all quill-viewer containers
+        const quillViewers = document.querySelectorAll('.quill-viewer.MuiBox-root.css-0');
+        
+        quillViewers.forEach(container => {
+            // Find all links within this quill-viewer that don't already have target="_blank"
+            const links = container.querySelectorAll('a:not([target="_blank"])');
+            
+            links.forEach(link => {
+                // Store original target before adding (for potential restoration)
+                if (!originalTargets.has(link)) {
+                    const currentTarget = link.getAttribute('target');
+                    originalTargets.set(link, currentTarget);
+                }
+                
+                // Add target="_blank"
+                link.setAttribute('target', '_blank');
+                console.log('Added target="_blank" to quill-viewer link:', link.href);
+            });
+        });
     }
     
     function removeTargetBlank() {
@@ -67,6 +102,10 @@
                 if (originalTarget) {
                     link.setAttribute('target', originalTarget);
                     console.log('Restored target="_blank" to:', link.href);
+                } else if (originalTarget === null) {
+                    // If original was null, remove the target attribute
+                    link.removeAttribute('target');
+                    console.log('Removed target from link (was originally null):', link.href);
                 }
             }
         });
@@ -88,7 +127,8 @@
     
     function processAllLinks() {
         if (isEnabled) {
-            removeTargetBlank();
+            removeTargetBlank(); // Remove target="_blank" from most links
+            addTargetBlankToQuillViewer(); // Add target="_blank" to quill-viewer links
         } else {
             restoreTargetBlank();
         }
@@ -102,10 +142,13 @@
             
             mutations.forEach(function(mutation) {
                 if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-                    // Check if any added nodes contain links
+                    // Check if any added nodes contain links or quill-viewer elements
                     mutation.addedNodes.forEach(function(node) {
                         if (node.nodeType === Node.ELEMENT_NODE) {
-                            if (node.tagName === 'A' || node.querySelector('a')) {
+                            if (node.tagName === 'A' || 
+                                node.querySelector('a') ||
+                                node.classList.contains('quill-viewer') ||
+                                node.querySelector('.quill-viewer')) {
                                 shouldCheck = true;
                             }
                         }
@@ -142,7 +185,7 @@
             
             if (isEnabled && !wasEnabled) {
                 startObserver();
-                console.log('Extension enabled - target="_blank" removal active');
+                console.log('Extension enabled - target="_blank" removal/addition active');
             } else if (!isEnabled && wasEnabled) {
                 console.log('Extension disabled - target="_blank" attributes restored');
             }
@@ -158,4 +201,4 @@
     }
     
     init();
-})();
+})()
