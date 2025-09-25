@@ -12,6 +12,8 @@ a. Email tab (only applies to DOE WA portals)</br>
 b. School Favourites</br>
 c. Quick Actions</br>
 
+Now adds "_blank" to any links present in the body of News Feed items. To ensure they always open in a new tab.
+
 You can enable/disable the extension in a flash, clicking on the extension icon in the menubar gives you the option to enable or disable on the fly.
 
 ## Support:
