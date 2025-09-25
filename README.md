@@ -20,7 +20,7 @@ You can enable/disable the extension in a flash, clicking on the extension icon 
 This version of the extenion supports **Firefox**!
 
 [**Chrome** & **Edge** are supported.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/main)</br>
-[**Safari** is a WIP.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/safari) (check the Safari branch)
+[**Safari** is a WIP.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/safari)
 
 ## How to install or test the unloaded version.
 
