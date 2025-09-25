@@ -1,4 +1,4 @@
-# CompassNoNewTabs Extension
+# CompassNoNewTabs Edge Extension
 Do you get fed up using Compass for more than 5 minutes and ending up with a million tabs open?</br></br>
 So do I!</br></br>
 But that no longer has to be the case. 😊</br>
@@ -17,8 +17,9 @@ Now **adds** "_blank" to any links present in the body of News Feed items. To en
 You can enable/disable the extension in a flash, clicking on the extension icon in the menubar gives you the option to enable or disable on the fly.
 
 ## Support:
-This version of the extenion supports **Chrome** & **Edge**!
+This version of the extenion supports **Edge** specifically!
 
+[**Chrome** is supported](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/main)</br>
 [**Firefox** is supported.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/firefox)</br>
 [**Safari** is a WIP.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/safari)
 
