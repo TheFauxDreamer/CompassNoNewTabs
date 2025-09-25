@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "Compass No New Tabs",
+  "version": "1.0",
+  "description": "Sick of Compass opening a new tab everytime you click on something? That's a thing of the past now",
+  
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://*.compass.education/*"
+  ],
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Toggle Target Blank Remover",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://*.compass.education/*"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  
+  "applications": {
+    "gecko": {
+      "id": "compass-no-new-tabs@example.com",
+      "strict_min_version": "57.0"
+    }
+  }
+}
