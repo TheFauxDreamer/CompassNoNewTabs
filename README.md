@@ -17,7 +17,7 @@ Now **adds** "_blank" to any links present in the body of News Feed items. To en
 You can enable/disable the extension in a flash, clicking on the extension icon in the menubar gives you the option to enable or disable on the fly.
 
 ## Support:
-This version of the extenion supports **Chrome** & **Chromium-based browsers**!
+This version of the extension supports **Chrome** & **Chromium-based browsers**!
 
 [**Edge** is specifically supported.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/edge)</br>
 [**Firefox** is supported.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/firefox)</br>
