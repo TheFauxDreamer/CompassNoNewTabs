@@ -1,4 +1,4 @@
-# CompassNoNewTabs Extension
+# CompassNoNewTabs Firefox Extension
 Do you get fed up using Compass for more than 5 minutes and ending up with a million tabs open?</br></br>
 So do I!</br></br>
 But that no longer has to be the case. 😊</br>
