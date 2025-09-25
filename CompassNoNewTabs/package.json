@@ -1,0 +1,38 @@
+{
+  "name": "compass-no-new-tabs",
+  "version": "1.0.0",
+  "description": "Microsoft Edge extension to improve navigation on Compass Education platforms",
+  "main": "content.js",
+  "scripts": {
+    "build": "npm run clean && npm run copy && npm run validate",
+    "clean": "rm -rf dist",
+    "copy": "mkdir -p dist && cp manifest.json content.js popup.html popup.js dist/ && cp -r icons dist/",
+    "validate": "echo 'Validating manifest...' && node -e \"const manifest = require('./dist/manifest.json'); console.log('Manifest valid:', manifest.name);\"",
+    "zip": "cd dist && zip -r ../compass-navigation-helper-edge-v1.0.0.zip .",
+    "package": "npm run build && npm run zip"
+  },
+  "keywords": [
+    "compass",
+    "education",
+    "navigation",
+    "tabs",
+    "edge",
+    "extension",
+    "productivity"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/compass-navigation-helper-edge"
+  },
+  "browser_specific": {
+    "edge_minimum_version": "88.0.705.50",
+    "manifest_version": 3,
+    "target_store": "Microsoft Edge Add-ons"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

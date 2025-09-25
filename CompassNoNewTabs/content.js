@@ -5,10 +5,12 @@
     let observer = null;
     let originalTargets = new Map(); // Store original target values for restoration
     
-    // Check if extension is enabled
+    // Check if extension is enabled - using browser API for better Edge compatibility
     async function checkEnabled() {
         try {
-            const result = await chrome.storage.sync.get(['enabled']);
+            // Use browser API if available, fallback to chrome API
+            const api = typeof browser !== 'undefined' ? browser : chrome;
+            const result = await api.storage.sync.get(['enabled']);
             isEnabled = result.enabled !== false; // Default to true
         } catch (error) {
             console.log('Storage not available, defaulting to enabled');
@@ -175,7 +177,9 @@
     }
     
     // Listen for storage changes (when popup toggles the setting)
-    chrome.storage.onChanged.addListener((changes) => {
+    // Use browser API if available, fallback to chrome API for better Edge compatibility
+    const api = typeof browser !== 'undefined' ? browser : chrome;
+    api.storage.onChanged.addListener((changes) => {
         if (changes.enabled) {
             const wasEnabled = isEnabled;
             isEnabled = changes.enabled.newValue;
