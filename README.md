@@ -20,13 +20,13 @@ You can enable/disable the extension in a flash, clicking on the extension icon 
 This version of the extenion supports **Edge** specifically!
 
 [**Chrome & Chromium Browsers** are supported](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/main)</br>
-[**Firefox** is supported.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/firefox)</br>
-[**Safari** is a WIP.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/safari)
+[**Firefox** is supported](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/firefox)</br>
+[**Safari** is a WIP](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/safari)
 
 ## How to install or test the unloaded version.
 
 1. Download it from this Github, and save it somewhere useful.
-2. Go to Chrome Settings using three dots on the top right corner.
+2. Go to Edge Settings using three dots on the top right corner.
 3. Then Select Extensions.
 4. Now, Enable developer mode
 5. Click on Load Unpacked and select your unzipped folder you downloaded from here.
