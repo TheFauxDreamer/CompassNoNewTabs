@@ -17,9 +17,10 @@ Now **adds** "_blank" to any links present in the body of News Feed items. To en
 You can enable/disable the extension in a flash, clicking on the extension icon in the menubar gives you the option to enable or disable on the fly.
 
 ## Support:
-This version of the extenion supports Chrome & Edge!
+This version of the extenion supports **Chrome** & **Edge**!
 
-Safari is a WIP. (check the Safari branch)
+**Firefox** is supported. (check the Firefox branch)
+**Safari** is a WIP. (check the Safari branch)
 
 ## How to install or test the unloaded version.
 
