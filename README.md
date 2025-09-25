@@ -17,16 +17,17 @@ Now **adds** "_blank" to any links present in the body of News Feed items. To en
 You can enable/disable the extension in a flash, clicking on the extension icon in the menubar gives you the option to enable or disable on the fly.
 
 ## Support:
-This version of the extenion supports Chrome & Edge!
+This version of the extenion supports **Firefox**!
 
-Safari is a WIP. (check the Safari branch)
+**Chrome** & **Edge** are supported.
+**Safari** is a WIP. (check the Safari branch)
 
 ## How to install or test the unloaded version.
 
 1. Download it from this Github, and save it somewhere useful.
-2. Go to Chrome Settings using three dots on the top right corner.
-3. Then Select Extensions.
-4. Now, Enable developer mode
-5. Click on Load Unpacked and select your unzipped folder you downloaded from here.
+2. In Firefox, go to about:debugging
+3. Click "This Firefox"
+4. Click "Load Temporary Add-on"
+5. Select the manifest.json file
 
 That's it!
