@@ -19,8 +19,8 @@ You can enable/disable the extension in a flash, clicking on the extension icon 
 ## Support:
 This version of the extenion supports **Chrome** & **Edge**!
 
-**Firefox** is supported. (check the Firefox branch)</br>
-**Safari** is a WIP. (check the Safari branch)
+[**Firefox** is supported.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/firefox)</br>
+[**Safari** is a WIP.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/safari)
 
 ## How to install or test the unloaded version.
 
