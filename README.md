@@ -19,7 +19,7 @@ You can enable/disable the extension in a flash, clicking on the extension icon 
 ## Support:
 This version of the extenion supports **Edge** specifically!
 
-[**Chrome** is supported](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/main)</br>
+[**Chrome & Chromium Browsers** are supported](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/main)</br>
 [**Firefox** is supported.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/firefox)</br>
 [**Safari** is a WIP.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/safari)
 
