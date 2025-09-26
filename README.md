@@ -18,6 +18,7 @@ You can enable/disable the extension in a flash, clicking on the extension icon 
 
 ## Support:
 There is another version that supports [**Chrome** & **Chromium**](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/main) based browsers!
+
 [**Firefox** is supported.](https://github.com/TheFauxDreamer/CompassNoNewTabs/tree/firefox)</br>
 **Safari** is a WIP.
 
